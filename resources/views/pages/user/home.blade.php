@@ -1,495 +1,850 @@
 <x-app-layout>
-    <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 
-        <div class="sm:flex sm:justify-between sm:items-center mb-8">
+    <!-- Corousel -->
+    <section
+        class="relative bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply pb-32 md:pb-32">
 
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96" style="z-index: 10;">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://images.pexels.com/photos/462119/pexels-photo-462119.jpeg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://images.pexels.com/photos/532765/pexels-photo-532765.jpeg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://images.pexels.com/photos/2102436/pexels-photo-2102436.jpeg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://images.pexels.com/photos/1619316/pexels-photo-1619316.jpeg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="...">
-                    </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                        data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                        data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                        data-carousel-slide-to="4"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 1 1 5l4 4" />
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
+        <div class="px-4 max-w-screen-xl py-24 lg:py-56">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl  sm:px-8 lg:px-24 font-[Montserrat]">
+                Inovasi Digital Membangun Desa Siponjot
+            </h1>
+            <p
+                class="grid grid-cols-1 lg:grid-cols-3 text-lg font-normal text-gray-300 lg:text-xl  sm:px-8 lg:px-24 font-[Montserrat] text-left lg:text-left mb-8">
+                Layanan dan Informasi Digital Untuk Masyarakat Siponjot, Menuju Desa Cerdas
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:px-8 lg:px-24">
+                <a href="#"
+                    class="h-[44px] w-[146px] inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#34987D] hover:bg-[#2d8763] focus:ring-4 focus:ring-[#2d8763] dark:focus:ring-blue-900">
+                    Masuk
+                </a>
+                <a href="#"
+                    class="h-[44px] w-[146px] inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium  text-white text-center rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Daftar
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Layanan Surat -->
+        <div
+            class="absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 translate-y-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 md:p-12 z-10 w-[90%] lg:w-[75%] h-auto min-h-[285px]">
+            <h3 class="text-gray-900 dark:text-white text-center text-2xl font-semibold font-[Montserrat] mb-6">
+                Layanan Surat di Desa Siponjot
+            </h3>
+
+            <div class="relative">
+                <!-- Carousel Navigation - Left Arrow -->
+                <button id="prev-btn"
+                    class="absolute border border-[#34987D] left-0 top-1/2 -translate-y-1/2 -mr-4 w-12 h-12 bg-white rounded-full shadow-md z-10 flex items-center justify-center text-green-600 hover:bg-gray-50">
+                    <svg class="w-6 h-6 text-[#34987D]  dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                    </svg>
+
                 </button>
+
+                <!-- Carousel Container -->
+                <div class="relative overflow-hidden">
+                    <div id="carousel"
+                        class="carousel-container flex gap-4 overflow-x-scroll scrollbar-hide py-4 px-2">
+
+                        <!-- Item 1: Keterangan Domisili -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Domisili</p>
+                        </div>
+
+                        <!-- Item 2: Keterangan Usaha -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Usaha</p>
+                        </div>
+
+                        <!-- Item 3: Keterangan DTKS -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan DTKS</p>
+                        </div>
+
+                        <!-- Item 4: Keterangan Kelakuan Baik -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Kelakuan Baik</p>
+                        </div>
+
+                        <!-- Item 5: Keterangan Tidak Mampu -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Tidak Mampu</p>
+                        </div>
+
+                        <!-- Item 6: Keterangan Status Tanah -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Status Tanah</p>
+                        </div>
+
+                        <!-- Item 7: Keterangan Janda/Duda -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Janda/Duda</p>
+                        </div>
+
+                        <!-- Item 8: Keterangan Ahli Waris -->
+                        <div
+                            class="flex-shrink-0 w-32 md:w-36 bg-white rounded-lg shadow-md p-3 flex flex-col items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-3">
+                                <svg class="w-full h-full text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <p class="mt-3 text-center text-xs">Keterangan Ahli Waris</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation - Right Arrow -->
+                <button id="next-btn"
+                    class="absolute border border-[#34987D] right-0 top-1/2 -translate-y-1/2 -mr-4 w-12 h-12 bg-white rounded-full shadow-md z-10 flex items-center justify-center text-green-600 hover:bg-gray-50">
+                    <svg class="w-6 h-6 text-[#34987D]  dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 12H5m14 0-4 4m4-4-4-4" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Administrasi -->
+    <section class="mt-53 sm:mt-47 lg:mt-50 py-8 lg:mx-auto lg:py-16 mx-[20px]">
+        <h3
+            class="text-gray-900 dark:text-white text-center text-2xl font-semibold font-[Montserrat] mb-6 underline underline-offset-8 decoration-[6px] decoration-[#34987D]">
+            Administrasi Penduduk
+        </h3>
+        <p class="text-xs text-center font-normal text-gray-500 dark:text-gray-400 mb-6 font-[Montserrat]">
+            Sistem digital yang berfungsi mempermudah pengelolaan data dan informasi terkait dengan
+            kependudukan dan pendayagunaannya untuk pelayanan publik yang efektif dan efisien.
+        </p>
+
+        <div class="flex flex-wrap lg:gap-4 gap-3 justify-center place-content-between">
+            <a href="#"
+                class="flex flex-row items-center w-full lg:w-[548px] lg:h-[137px] rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div
+                    class="flex flex-row w-[50%] lg:w-[274px] h-full justify-center gap-3 items-center p-4 leading-normal bg-[#34987D] rounded-l-lg">
+                    <img class="object-cover w-[30px] h-[24px] rounded-t-lg lg:w-[60px] lg:h-[42px] md:rounded-none md:rounded-s-lg"
+                        src="images/users/peoples.png" alt="">
+                    <h5
+                        class="text-lg lg:text-3xl font-semibold tracking-tight text-white dark:text-white font-[Montserrat]">
+                        2.749</h5>
+                </div>
+                <div
+                    class="flex w-[50%] lg:w-[274px] h-full justify-center items-center leading-normal dark:hover:bg-gray-700">
+                    <h5
+                        class="text-lg text-center lg:text-2xl font-semibold tracking-tight text-black dark:text-white font-[Montserrat]">
+                        Penduduk
+                    </h5>
+                </div>
+            </a>
+
+            <a href="#"
+                class="flex flex-row  items-center w-full lg:w-[548px] lg:h-[137px]  rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div
+                    class="flex flex-row w-[50%] lg:w-[274px] h-full justify-center gap-3 items-center p-4 leading-normal bg-[#34987D] rounded-l-lg">
+                    <img class="object-cover w-[30px] h-[24px] rounded-t-lg lg:w-[16px] lg:h-[41px] md:rounded-none md:rounded-s-lg"
+                        src="images/users/male.png" alt="">
+                    <h5
+                        class="text-lg lg:text-3xl font-semibold tracking-tight text-white dark:text-white font-[Montserrat]">
+                        1.292</h5>
+                </div>
+                <div class="flex w-[50%] lg:w-[274px] h-full justify-center items-center">
+                    <h5
+                        class="text-lg text-center lg:text-2xl font-semibold tracking-tight text-black dark:text-white font-[Montserrat]">
+                        Laki-Laki
+                    </h5>
+                </div>
+            </a>
+
+            <a href="#"
+                class="flex flex-row  items-center w-full lg:w-[548px] lg:h-[137px]  rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div
+                    class="flex flex-row w-[50%] lg:w-[274px] h-full justify-center gap-3 items-center p-4 leading-normal bg-[#34987D] rounded-l-lg">
+                    <img class="object-cover w-[30px] h-[24px] rounded-t-lg lg:w-[37px] lg:h-[37px] md:rounded-none md:rounded-s-lg"
+                        src="images/users/person.png" alt="">
+                    <h5
+                        class="text-lg lg:text-3xl font-semibold tracking-tight text-white dark:text-white font-[Montserrat]">
+                        538</h5>
+                </div>
+                <div class="flex w-[50%] lg:w-[274px] h-full justify-center items-center">
+                    <h5
+                        class="text-lg text-center lg:text-2xl font-semibold tracking-tight text-black dark:text-white font-[Montserrat]">
+                        Kepala Keluarga
+                    </h5>
+                </div>
+            </a>
+
+            <a href="#"
+                class="flex flex-row  items-center w-full lg:w-[548px] lg:h-[137px]  rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div
+                    class="flex flex-row w-[50%] lg:w-[274px] h-full justify-center gap-3 items-center p-4 leading-normal bg-[#34987D] rounded-l-lg">
+                    <img class="object-cover w-[30px] h-[24px] rounded-t-lg lg:w-[20px] lg:h-[41px] md:rounded-none md:rounded-s-lg"
+                        src="images/users/female.png" alt="">
+                    <h5
+                        class="text-lg lg:text-3xl font-semibold tracking-tight text-white dark:text-white font-[Montserrat]">
+                        1.457</h5>
+                </div>
+                <div class="flex w-[50%] lg:w-[274px] h-full justify-center items-center">
+                    <h5
+                        class="text-lg  text-center lg:text-2xl font-semibold tracking-tight text-black dark:text-white font-[Montserrat]">
+                        Perempuan
+                    </h5>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- APBD  -->
+    <section class="mx-auto ">
+        <h3
+            class="text-gray-900 dark:text-white text-center text-2xl font-semibold font-[Montserrat] mb-6 underline underline-offset-8 decoration-[6px] decoration-[#34987D]">
+            APB Desa Siponjot
+        </h3>
+        <p class="text-[12px] text-center font-[400px] text-black dark:text-gray-400 mb-6 font-[Montserrat]">
+            Akses cepat dan transparan terhadap APB Desa serta proyek pembangunan.
+        </p>
+        <nav class="flex justify-center">
+            <div
+                class="w-[911px] h-[500px] flex flex-col col-span-full sm:col-span-6 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
+                <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
+                    <p class="text-[24px] font-[400px] text-gray-500 dark:text-gray-400 mb-6 font-[Montserrat]">
+                        Grafik Pemasukan dan Pengeluaran
+                    </p>
+                </header>
+                <div id="dashboard-card-04-legend" class="px-5 py-3">
+                    <ul class="flex flex-wrap gap-x-4"></ul>
+                </div>
+                <div class="grow">
+                    <canvas id="dashboard-card-04" width="595" height="248"></canvas>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Program Desa -->
+    <section class="mt-53 sm:mt-47 lg:mt-20 py-8 lg:mx-auto lg:py-16 mx-[20px]">
+        <h3
+            class="text-gray-900 dark:text-white text-center text-2xl font-semibold font-[Montserrat] mb-6 underline underline-offset-8 decoration-[6px] decoration-[#34987D]">
+            Program Desa
+        </h3>
+        <p class="text-[12px] text-center font-[400px] text-black dark:text-gray-400 mb-6 font-[Montserrat]">
+            Ayo ikut pelatihan desa! Tingkatkan keterampilan, raih peluang baru, dan jadilah bagian dari perubahan
+            menuju Desa Siponjot yang lebih maju!
+        </p>
+
+        <div class="flex flex-wrap lg:gap-[28px] gap-3 justify-center place-content-between">
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[265px] lg:w-[265px] sm:w-[265px] lg:h-[393px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[265px] h-[180px]" src="images/users/bahasainggris.png"
+                        alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <div
+                        class="me-2 px-2.5 py-0.5 dark:bg-blue-900 dark:text-blue-300 h-[20px] w-[65px] text-center rounded-xs border border-[#F8A52C] focus:ring-4 focus:ring-gray-400">
+                        <p class="text-[10px] text-[#F8A52C] font-extralight dark:text-[#F8A52C]">Pelatihan</p>
+                    </div>
+                    <h5
+                        class="mt-2 mb-2 text-2xl font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Program Pelatihan Bahasa Inggris</h5>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Setiap Kamis & Jumat
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Pukul : 15:00-17:00
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        📍Gedung Rapat Dusun I
+                    </p>
+                    <div class="flex-grow"></div>
+                </div>
                 <button type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
+                    class="w-full focus:outline-none text-white dark:text-black bg-[#34987D] hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-b-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Daftar Sekarang
+                </button>
+            </div>
+
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[265px] lg:w-[265px] sm:w-[265px] lg:h-[393px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[265px] h-[180px]" src="images/users/ukm.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <div
+                        class="me-2 px-2.5 py-0.5 dark:bg-blue-900 dark:text-blue-300 h-[20px] w-[65px] text-center rounded-xs border border-[#F8A52C] focus:ring-4 focus:ring-gray-400">
+                        <p class="text-[10px] text-[#F8A52C] font-extralight dark:text-[#F8A52C]">Pelatihan</p>
+                    </div>
+                    <h5
+                        class="mt-2 mb-2 text-2xl font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Kelas Membuat Produk Kreatif (UMKM)</h5>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Sabtu, 29 Maret 2025
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Pukul : 15:00-17:00
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        📍Dusun II
+                    </p>
+                    <div class="flex-grow"></div>
+                </div>
+                <button type="button"
+                    class="w-full focus:outline-none text-white dark:text-black bg-[#34987D] hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-b-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Daftar Sekarang
+                </button>
+            </div>
+
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[265px] lg:w-[265px] sm:w-[265px] lg:h-[393px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[265px] h-[180px]" src="images/users/speaking.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <div
+                        class="me-2 px-2.5 py-0.5 dark:bg-blue-900 dark:text-blue-300 h-[20px] w-[65px] text-center rounded-xs border border-[#34987D] focus:ring-4 focus:ring-gray-400">
+                        <p class="text-[10px] text-[#34987D] font-extralight dark:text-[#34987D]">Seminar</p>
+                    </div>
+                    <h5
+                        class="mt-2 mb-2 text-2xl font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Public Speaking & Kepemimpinan Muda</h5>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Selasa, 01 April 2025
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Pukul : 15:00-17:00
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        📍Dusun III
+                    </p>
+                    <div class="flex-grow"></div>
+                </div>
+                <button type="button"
+                    class="w-full focus:outline-none text-white dark:text-black bg-[#34987D] hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-b-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Daftar Sekarang
+                </button>
+            </div>
+
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[265px] lg:w-[265px] sm:w-[265px] lg:h-[393px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[265px] h-[180px]" src="images/users/batik.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <div
+                        class="me-2 px-2.5 py-0.5 dark:bg-blue-900 dark:text-blue-300 h-[20px] w-[65px] text-center rounded-xs border border-[#F8A52C] focus:ring-4 focus:ring-gray-400">
+                        <p class="text-[10px] text-[#F8A52C] font-extralight dark:text-[#F8A52C]">Pelatihan</p>
+                    </div>
+                    <h5
+                        class="mt-2 mb-2 text-2xl font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Pelatihan Keamanan Pangan untuk UMKM Kuliner</h5>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Kamis, 03 April 2025
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        Pukul : 15:00-17:00
+                    </p>
+                    <p class="text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                        📍Gedung Rapat Dusun I
+                    </p>
+                    <div class="flex-grow"></div>
+                </div>
+                <button type="button"
+                    class="w-full focus:outline-none text-white dark:text-black bg-[#34987D] hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-b-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Daftar Sekarang
                 </button>
             </div>
 
         </div>
 
+    </section>
 
 
-        <section class="shadow-xs rounded-xl">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-                <div class=" bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 md:p-12 mb-8">
-                    <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Profil Desa
-                    </h1>
-                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">Static websites are now used to
-                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
-                        both web designers and developers.</p>
-                    <a href="#"
-                        class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                        Read more
-                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
+    <!-- Berita & Informasi Terkini -->
+    <section class="mt-20 mb-20 sm:mt-47 items-center lg:mt-5 lg:mx-[100px] lg:py-16 mx-[20px]">
+        <h3
+            class="text-gray-900 dark:text-white text-center text-2xl font-semibold font-[Montserrat] mb-6 underline underline-offset-8 decoration-[6px] decoration-[#34987D]">
+            Berita & Informasi Terkini
+        </h3>
+        <p class="text-[12px] text-center font-[400px] text-black dark:text-gray-400 mb-6 font-[Montserrat]">
+            Menyajikan informasi terbaru tentang peristiwa, berita terkini, dan artikel-artikel jurnalistik dari Desa
+            Siponjot.
+        </p>
+
+        <div class="flex flex-wrap lg:gap-[30px] gap-3 justify-center place-content-between">
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/1.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        IT Del Jalin Kerjasama dengan Desa Siponjot, Humbang Hasundutan</h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        Pada hari Kamis, 15 Agustus 2024, Institut Teknologi Del melaksanakan penandatanganan Nota
+                        Kesepahaman (MoU) dengan Desa Sopinjot, Kecamatan Lintongnihuta, Kabupaten Humbang Hasundutan di
+                        kampus IT Del..
+                    </p>
                 </div>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 md:p-12">
-                        {{-- <a href="#"
-                            class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
-                            <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor" viewBox="0 0 18 18">
-                                <path
-                                    d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
-                            </svg>
-                            Design
-                        </a> --}}
-                        <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Visi</h2>
-                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
-                            used to bootstrap lots of websites and are becoming the basis for a variety of tools that
-                            even influence both web designers and developers.</p>
-                        <a href="#"
-                            class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
-                            more
-                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 shadow-xl rounded-lg p-8 md:p-12">
-                        {{-- <a href="#"
-                            class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
-                            <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 16">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
-                            </svg>
-                            Code
-                        </a> --}}
-                        <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Misi</h2>
-                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
-                            used to bootstrap lots of websites and are becoming the basis for a variety of tools that
-                            even influence both web designers and developers.</p>
-                        <a href="#"
-                            class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
-                            more
-                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
                 </div>
             </div>
-        </section>
 
-
-
-        <section class=" dark:bg-gray-900 shadow-xs rounded-xl">
-            <p class="px-5 text-4xl font-bold text-gray-900 dark:text-white my-5 underline decoration-blue-100">
-                Berita &
-                Pengumuman:</p>
-
-            <div class="py-2    sm:flex items-center justify-center flex-wrap gap-6">
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/2.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Desa Siponjot Humbahas Juara III Desa Inovatif Tingkat Sumut 2022</h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        LINTONGNIHUTA, KOMED – Desa Siponjot, Kecamatan Lintongnihuta, Kabupaten Humbang Hasundutan
+                        (Humbahas), meraih juara III Desa Inovatif Tingkat Provinsi Sumatera Utara (Sumut) tahun 2022.
+                        Hal itu diakui Kepala Desa Siponjot, Deka Seply Silaban..
+                    </p>
                 </div>
-
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl  dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
                 </div>
-
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl  dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl  dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl  dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="max-w-sm my-5 bg-white  rounded-lg shadow-xl  dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <p class="py-5 px-5 text-4xl font-bold text-gray-900 dark:text-white my-5 underline decoration-blue-100">
-            Request Bantuan:</p>
-        <form class="bg-white  rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-xl max-w-4xl mx-auto">
-            <div class="px-5 py-5">
-                <div class="grid gap-6 mb-6 md:grid-cols-2">
-                    <div>
-                        <label for="Nama"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-                        <input type="text" id="first_name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="John" required />
-                    </div>
-                    <div>
-                        <label for="NIK"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIK</label>
-                        <input type="text" id="NIK"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Doe" required />
-                    </div>
-                    <div>
-                        <label for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
-                        <input type="text" id="company"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Flowbite" required />
-                    </div>
-                    <div>
-                        <label for="Deskripsi"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
-                        <input type="text" id="company"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Flowbite" required />
-                    </div>
-                    <div>
-                        <label for="phone"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Hp</label>
-                        <input type="tel" id="phone"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
-                    </div>
-                    <div>
-                        <label for="Urgensi"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Urgensi</label>
-                        <input type="url" id="website"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder=".." required />
-                    </div>
-
-                    <div>
-                        <label for="Penanggung Jawab"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penanggung
-                            Jawab</label>
-                        <input type="url" id="website"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder=".." required />
-                    </div>
-                </div>
-                <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
-                        address</label>
-                    <input type="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="john.doe@company.com" required />
-                </div>
-
-                <div class="flex items-start mb-6">
-                    <div class="flex items-center h-5">
-                        <input id="remember" type="checkbox" value=""
-                            class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-                            required />
-                    </div>
-                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree
-                        with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and
-                            conditions</a>.</label>
-                </div>
-                <button type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-
             </div>
 
-        </form>
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/3.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        PAUD SEJAHTRA DESA SIPONJOT KEC.LINTONG NIHUTA MENDATANGI MAKO POLRES HUMBAHAS HUMBANG
+                        HASUNDUTAN</h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        Kapolres Humbang Hasundutan AKBP HARY HARDIANTO., S.H.,S.I.K.,M.H menyambut baik kunjungan dari
+                        Paud Sejahtera Desa Siponjot Kec.Lintong nihuta Kabupaten Humbang Hasundutan..
+                    </p>
+                </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/4.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        Hadiri Natal Desa Siponjot, Bupati Humbahas: Natal Ini Luar Biasa Menggunakan Bahasa Inggris
+                    </h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        Perayaan Natal ini menggunakan tertib acara Bahasa Inggris. Ketua Panitia Natal Jasmer Silaban
+                        mengucapkan selamat datang dan menyampaikan terimakasih kepada Bupati Humbahas Dosmar
+                        Banjarnajor atas kesediaannya dan kehadirannya dalam acara Natal Desa Siponjot..
+                    </p>
+                </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
 
 
-    </div>
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/5.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        LPPM-USU: Penyiapan Ketangguhan Warga Desa untuk Mitigasi Bencana di Desa Siponjot Humbahas</h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        Pada awal Desember 2023, banjir bandang dan longsor melanda Humbahas. Selain korban jiwa, banjir
+                        bandang dan longsor ini juga menyebabkan beberapa rumah warga rusak akibat bencana banjir dan
+                        tanah longsor tersebut..
+                    </p>
+                </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+
+
+            <div
+                class="max-w-sm shadow-lg rounded-[10px] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[345px] lg:w-[345px] sm:w-[345px] lg:h-[550px] flex flex-col justify-between">
+                <a href="#">
+                    <img class="rounded-t-lg w-[345px] h-[231px]" src="images/users/6.png" alt="" />
+                </a>
+                <div class="p-3 flex-grow flex flex-col">
+                    <h5
+                        class="mt-2 mb-2 text-[14px] font-medium text-sm tracking-tight text-gray-900 dark:text-white font-[Montserrat]">
+                        PAUD SEJAHTRA DESA SIPONJOT KEC.LINTONG NIHUTA MENDATANGI MAKO POLRES HUMBAHAS HUMBANG
+                        HASUNDUTAN</h5>
+                    <nav class="flex items-center">
+                        <img class="w-[12x] h-[12px] mr-[5px]" src="images/users/person1.png" alt="">
+                        <p
+                            class="text-center text-[10px] text-black font-normal font-[Montserrat] leading-[20px] dark:text-white">
+                            By admin - Agustus 16 2024
+                        </p>
+                    </nav>
+                    <p class="text-[10px] text-black font-normal mt-[20px] font-[Montserrat] leading-[20px] dark:text-white"
+                        style="text-align: justify;">
+                        Pada awal Desember 2023, banjir bandang dan longsor melanda Humbahas. Selain korban jiwa, banjir
+                        bandang dan longsor ini juga menyebabkan beberapa rumah warga rusak akibat bencana banjir dan
+                        tanah longsor tersebut..
+                    </p>
+                </div>
+                <div class="p-3 mb-2">
+                    <button type="button"
+                        class="w-full focus:outline-none border border-[#34987D] text-[#34987D] dark:text-black hover:bg-[#6ecdb3] focus:ring-4 focus:ring-green-300 font-bold rounded-[10px] mb-0 text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-[94%] sm:w-[97%] lg:w-[91.5%]  flex justify-end mt-8">
+            <a href="#"
+                class="inline-flex w-[201px] items-center px-3 py-2 justify-center text-sm font-medium text-center text-white bg-[#34987D] rounded-lg hover:bg-[#8ce9d0] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="w-6 h-6 text-white dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-width="2"
+                        d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z" />
+                    <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                Semua Berita
+            </a>
+        </div>
+    </section>
 
 
 
-
+    <!-- Footer -->
     <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
+        <div class="mx-auto w-[95%] max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="flex flex-wrap sm:flex sm:flex-wrap sm:justify-center md:flex md:flex-wrap md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="https://flowbite.com/" class="flex items-center">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
                         <span
                             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                     </a>
+
+                    <nav class="m-6">
+                        <p class="text-[18px] font-[Montserrat]">Leading Digital Solutions For Your Business!
+                        </p>
+                    </nav>
                 </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+
+                <div>
+                    <h2
+                        class="mb-6 text-[24px] font-semibold text-[#00283B] font-[Montserrat] uppercase dark:text-white">
+                        Important Links
+                    </h2>
+                    <ul class="text-gray-500 text-center dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Menu</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Menu</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Menu</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Menu</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline font-[Montserrat]">Menu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <h2
+                            class="mb-6 text-[24px] font-semibold text-[#00283B] font-[Montserrat] uppercase dark:text-white">
+                            Contact us
+                        </h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                                <a href="#" class="hover:underline">Telfon: (+62) 9562 6467 202</a>
                             </li>
-                            <li>
-                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Email: TMC@gmail.com</a>
                             </li>
                         </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+
+
+                        <h2
+                            class="mb-6 text-[24px] font-semibold text-[#00283B] font-[Montserrat] uppercase dark:text-white">
+                            Social Media
+                        </h2>
+
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="#" class="hover:underline">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            <li class="mb-4 flex gap-2">
+                                <a href="#" class="hover:underline">
+                                    <img src="images/users/ig.png" class="h-[45px] w-[45px]" alt="">
+                                </a>
+                                <a href="#" class="hover:underline">
+                                    <img src="images/users/yt.png" class="h-[45px] w-[45px]" alt="">
+                                </a>
+                                <a href="#" class="hover:underline">
+                                    <img src="images/users/fb.png" class="h-[45px] w-[45px]" alt="">
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a
-                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+            <div class="sm:flex sm:items-center lg:items-center sm:justify-center lg:justify-center">
+                <span class="text-sm text-center lg:text-center text-gray-500 sm:text-center dark:text-gray-400">
+                    Copyright ©2024
+                    All rights
+                    reserved | This Website Was Made by TeamCore
                 </span>
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 8 19">
-                            <path fill-rule="evenodd"
-                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Facebook page</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 21 16">
-                            <path
-                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-                        </svg>
-                        <span class="sr-only">Discord community</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 20 17">
-                            <path fill-rule="evenodd"
-                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Twitter page</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">GitHub account</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Dribbble account</span>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.getElementById('carousel');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            // Define scroll amount based on item width
+            const itemWidth = 144; // Width of item + gap (w-32/w-36 + gap-4)
+            const scrollAmount = itemWidth * 3; // Scroll 3 items at a time
+
+            // Add smooth scrolling
+            carousel.style.scrollBehavior = 'smooth';
+
+            // Hide scrollbar
+            carousel.classList.add('scrollbar-hide');
+
+            // Navigation button event listeners
+            prevBtn.addEventListener('click', function() {
+                carousel.scrollLeft -= scrollAmount;
+            });
+
+            nextBtn.addEventListener('click', function() {
+                carousel.scrollLeft += scrollAmount;
+            });
+
+            // Add scrollbar-hide styles
+            if (!document.getElementById('scrollbar-hide-style')) {
+                const style = document.createElement('style');
+                style.id = 'scrollbar-hide-style';
+                style.textContent = `
+                    .scrollbar-hide::-webkit-scrollbar {
+                        display: none;
+                    }
+                    .scrollbar-hide {
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
+    </script>
+    <!-- Inisialisasi Chart -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('dashboard-card-04').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                            label: 'Pemasukan',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: 'rgba(117, 207, 182, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Pengeluaran',
+                            data: [8, 15, 7, 12, 6, 9],
+                            backgroundColor: 'rgba(255, 185, 135, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </x-app-layout>
