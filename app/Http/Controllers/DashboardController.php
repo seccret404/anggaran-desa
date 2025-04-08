@@ -14,23 +14,22 @@ class DashboardController extends Controller
         return view('pages/dashboard/dashboard', compact('dataFeed'));
     }
 
-    /**
-     * Displays the analytics screen
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function analytics()
-    {
-        return view('pages/dashboard/analytics');
+    public function LaporanKeuangan(){
+        return view('pages.dashboard.Keuangan.laporan_keuangan');
     }
 
-    /**
-     * Displays the fintech screen
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function fintech()
-    {
-        return view('pages/dashboard/fintech');
+    public function FormPengeluaran(){
+        return view('pages.dashboard.Keuangan.form_pengeluaran');
     }
+
+    public function FormPemasukan(){
+        return view('pages.dashboard.Keuangan.form_pemasukan');
+    }
+    public function DetailPengeluaran(){
+        return view('pages.dashboard.Keuangan.detail_pengeluaran');
+    }
+    public function DetailPemasukan(){
+        return view('pages.dashboard.Keuangan.detail_pemasukan');
+    }
+
 }

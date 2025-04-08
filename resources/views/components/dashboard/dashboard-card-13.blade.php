@@ -1,112 +1,43 @@
 <div class="col-span-full xl:col-span-6 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Income/Expenses</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Pengeluaran</h2>
     </header>
     <div class="p-3">
-
-        <!-- Card content -->
-        <!-- "Today" group -->
-        <div>
-            <header class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs font-semibold p-2">Today</header>
-            <ul class="my-1">
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-red-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-white" viewBox="0 0 36 36">
-                            <path d="M17.7 24.7l1.4-1.4-4.3-4.3H25v-2H14.8l4.3-4.3-1.4-1.4L11 18z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Qonto</a> billing</div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-gray-800 dark:text-gray-100">-$49.88</span>
+        <!-- Table -->
+        <div class="overflow-x-auto">
+            <table class="table-auto w-full">
+                <!-- Table header -->
+                <thead class="text-xs font-semibold uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50">
+                    <tr>
+                        <th class="p-2 whitespace-nowrap">
+                            <div class="font-semibold text-left">Bulan</div>
+                        </th>
+                        <th class="p-2 whitespace-nowrap">
+                            <div class="font-semibold text-left">Total</div>
+                        </th>
+                        <th class="p-2 whitespace-nowrap">
+                            <div class="font-semibold text-left">Aksi</div>
+                        </th>
+                    </tr>
+                </thead>
+                <!-- Table body -->
+                <tbody class="text-sm divide-y divide-gray-100 dark:divide-gray-700/60">
+                    <tr>
+                        <td class="p-2 whitespace-nowrap">
+                            Januari
+                        </td>
+                        <td class="p-2 whitespace-nowrap">
+                            10.000.000
+                        </td>
+                        <td class="p-2 whitespace-nowrap">
+                            <div class="grid grid-cols-2 gap-2">
+                                <a href="{{route('detail.pengeluaran')}}"><button  class="bg-[#3993BA] cursor-pointer w-full text-white rounded p-2">Detail</button></a>
+                                <button class="bg-[#34987D] w-full cursor-pointer text-white rounded p-2">Edit</button>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-green-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-white" viewBox="0 0 36 36">
-                            <path d="M18.3 11.3l-1.4 1.4 4.3 4.3H11v2h10.2l-4.3 4.3 1.4 1.4L25 18z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Cruip.com</a> Market Ltd 70 Wilson St London</div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-green-600">+249.88</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-green-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-white" viewBox="0 0 36 36">
-                            <path d="M18.3 11.3l-1.4 1.4 4.3 4.3H11v2h10.2l-4.3 4.3 1.4 1.4L25 18z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Notion Labs Inc</a></div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-green-600">+99.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-green-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-white" viewBox="0 0 36 36">
-                            <path d="M18.3 11.3l-1.4 1.4 4.3 4.3H11v2h10.2l-4.3 4.3 1.4 1.4L25 18z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Market Cap Ltd</a></div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-green-600">+1,200.88</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-gray-200 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-gray-400" viewBox="0 0 36 36">
-                            <path d="M21.477 22.89l-8.368-8.367a6 6 0 008.367 8.367zm1.414-1.413a6 6 0 00-8.367-8.367l8.367 8.367zM18 26a8 8 0 110-16 8 8 0 010 16z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">App.com</a> Market Ltd 70 Wilson St London</div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-gray-800 dark:text-gray-100 line-through">+$99.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-red-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-white" viewBox="0 0 36 36">
-                            <path d="M17.7 24.7l1.4-1.4-4.3-4.3H25v-2H14.8l4.3-4.3-1.4-1.4L11 18z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">App.com</a> Market Ltd 70 Wilson St London</div>
-                            <div class="shrink-0 self-start ml-2">
-                                <span class="font-medium text-gray-800 dark:text-gray-100">-$49.88</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
     </div>
 </div>
