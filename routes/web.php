@@ -11,6 +11,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\ManajemenAnggaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,6 @@ Route::get('/dashboard/admin/form-pengeluaran', [DashboardController::class,'For
 Route::get('/dashboard/admin/form-pemasukan', [DashboardController::class,'FormPemasukan'])->name('laporan.pemasukan');
 Route::get('/dashboard/admin/detail-pengeluaran', [DashboardController::class,'DetailPengeluaran'])->name('detail.pengeluaran');
 Route::get('/dashboard/admin/detail-pemasukan', [DashboardController::class,'DetailPemasukan'])->name('detail.pemasukan');
+
+
+Route::get('/dashboard/admin/manajemen-anggaran',[ManajemenAnggaranController::class,'manajemenAnggaran'])->name('manajemen.anggaran');
