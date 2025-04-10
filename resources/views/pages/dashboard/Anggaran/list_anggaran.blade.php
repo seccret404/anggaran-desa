@@ -11,90 +11,92 @@
             </div>
         </div>
 
-        <table id="myTable" class="display" style="width:100%">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nama Projek</th>
-                    <th>Penanggung Jawab</th>
-                    <th>Anggaran</th>
-                    <th>Tujuan</th>
-                    <th>Detail Anggaran</th>
-                    <th>Status</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Pembangunan Jalan Desa</td>
-                    <td>Edward Panjaitan</td>
-                    <td>Rp 20.000.000</td>
-                    <td>Meningkatkan Peluang Akademik</td>
-                    <td>program belajar (les) Bahasa Inggris...</td>
-                    <td><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Diajukan</span></td>
-                    <td>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
-                            <i class="fas fa-edit"></i> Edit
-                        </button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
-                            <i class="fas fa-trash-alt"></i> Hapus
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Pengadaan Alat Pertanian</td>
-                    <td>Ezra Sibarani</td>
-                    <td>Rp 1.000.000</td>
-                    <td>Meningkatkan Peluang Akademik</td>
-                    <td>program belajar (les) Bahasa Inggris...</td>
-                    <td><span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Disetujui</span></td>
-                    <td>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
-                            <i class="fas fa-edit"></i> Edit
-                        </button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
-                            <i class="fas fa-trash-alt"></i> Hapus
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Pelatihan Keterampilan Masyarakat</td>
-                    <td>Mahes Panjaitan</td>
-                    <td>Rp 9.000.000</td>
-                    <td>Meningkatkan Peluang Akademik</td>
-                    <td>program belajar (les) Bahasa Inggris...</td>
-                    <td><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Dalam Proses</span></td>
-                    <td>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
-                            <i class="fas fa-edit"></i> Edit
-                        </button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
-                            <i class="fas fa-trash-alt"></i> Hapus
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Pembangunan Sarana Air Bersih</td>
-                    <td>Rivael</td>
-                    <td>Rp 20.000.000</td>
-                    <td>Meningkatkan Peluang Akademik</td>
-                    <td>program belajar (les) Bahasa Inggris...</td>
-                    <td><span class="px-2 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">Selesai</span></td>
-                    <td>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
-                            <i class="fas fa-edit"></i> Edit
-                        </button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
-                            <i class="fas fa-trash-alt"></i> Hapus
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="bg-white shaow rounded p-4">
+            <table id="myTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Projek</th>
+                        <th>Penanggung Jawab</th>
+                        <th>Anggaran</th>
+                        <th>Tujuan</th>
+                        <th>Detail Anggaran</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pembangunan Jalan Desa</td>
+                        <td>Edward Panjaitan</td>
+                        <td>Rp 20.000.000</td>
+                        <td>Meningkatkan Peluang Akademik</td>
+                        <td>program belajar (les) Bahasa Inggris...</td>
+                        <td><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Diajukan</span></td>
+                        <td class="flex">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                                <i class="fas fa-trash-alt"></i> Hapus
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pengadaan Alat Pertanian</td>
+                        <td>Ezra Sibarani</td>
+                        <td>Rp 1.000.000</td>
+                        <td>Meningkatkan Peluang Akademik</td>
+                        <td>program belajar (les) Bahasa Inggris...</td>
+                        <td><span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Disetujui</span></td>
+                        <td class="flex">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                                <i class="fas fa-trash-alt"></i> Hapus
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pelatihan Keterampilan Masyarakat</td>
+                        <td>Mahes Panjaitan</td>
+                        <td>Rp 9.000.000</td>
+                        <td>Meningkatkan Peluang Akademik</td>
+                        <td>program belajar (les) Bahasa Inggris...</td>
+                        <td><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"> Proses</span></td>
+                        <td class="flex">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                                <i class="fas fa-trash-alt"></i> Hapus
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Pembangunan Sarana Air Bersih</td>
+                        <td>Rivael</td>
+                        <td>Rp 20.000.000</td>
+                        <td>Meningkatkan Peluang Akademik</td>
+                        <td>program belajar (les) Bahasa Inggris...</td>
+                        <td><span class="px-2 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">Selesai</span></td>
+                        <td class="flex">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded text-xs mr-1">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                                <i class="fas fa-trash-alt"></i> Hapus
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- JavaScript -->

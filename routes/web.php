@@ -10,6 +10,7 @@ use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProgramDesaController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\ManajemenAnggaranController;
 
@@ -44,3 +45,8 @@ Route::get('/dashboard/admin/detail-pemasukan', [DashboardController::class,'Det
 
 
 Route::get('/dashboard/admin/manajemen-anggaran',[ManajemenAnggaranController::class,'manajemenAnggaran'])->name('manajemen.anggaran');
+Route::get('/dashboard/admin/form-anggaran',[ManajemenAnggaranController::class,'FormAnggaran'])->name('form.anggaran');
+
+
+Route::get('/dashboard/admin/program-desa',[ProgramDesaController::class,'ProgramDesa'])->name('program.desa');
+Route::get('/dashboard/admin/form-desa',[ProgramDesaController::class,'FormProgramDesa'])->name('form.program.desa');
