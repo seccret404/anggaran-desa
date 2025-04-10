@@ -28,6 +28,7 @@ Route::get('/', [UserController::class, 'index'])->name('user');
 Route::get('/user/layanan/laporan-keuangan', [UserController::class, 'layanan_laporan_keuangan'])->name('laporankeuangan');
 Route::get('/user/layanan/pogram-desa', [UserController::class, 'layanan_program_desa'])->name('programdesa');
 Route::get('/user/berita/portal-berita', [UserController::class, 'portal_berita'])->name('portalberita');
+Route::get('/user/berita/detail-portal-berita', [UserController::class, 'detail_portal_berita'])->name('detailportalberita');
 Route::get('/user/kebijakan/kebijakan-desa', [UserController::class, 'kebijakan_desa'])->name('kebijakandesa');
 
 

@@ -35,6 +35,13 @@ class UserController extends Controller
         return view('pages/user/berita/portal_berita', compact('dataFeed'));
     }
 
+    public function detail_portal_berita()
+    {
+        $dataFeed = new DataFeed();
+
+        return view('pages/user/berita/detail_portal_berita', compact('dataFeed'));
+    }
+
     public function kebijakan_desa()
     {
         $dataFeed = new DataFeed();

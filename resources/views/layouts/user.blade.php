@@ -23,7 +23,7 @@
     <!-- Styles -->
     @livewireStyles
 
-    <script>
+    {{-- <script>
         if (localStorage.getItem('dark-mode') === 'false' || !('dark-mode' in localStorage)) {
             document.querySelector('html').classList.remove('dark');
             document.querySelector('html').style.colorScheme = 'light';
@@ -31,7 +31,7 @@
             document.querySelector('html').classList.add('dark');
             document.querySelector('html').style.colorScheme = 'dark';
         }
-    </script>
+    </script> --}}
 </head>
 
 <body class="font-inter antialiased bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400"
