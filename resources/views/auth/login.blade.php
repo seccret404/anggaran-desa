@@ -1,52 +1,55 @@
-<x-authentication-layout>
-    <h1 class="text-3xl text-gray-800 dark:text-gray-100 font-bold mb-6">{{ __('Welcome back!') }}</h1>
-    @if (session('status'))
-        <div class="mb-4 font-medium text-sm text-green-600">
-            {{ session('status') }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformasi Digital - Desa Siponjot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="flex flex-col md:flex-row bg-white shadow-lg m-4  overflow-hidden max-w-4xl w-full">
+        <div class="md:w-1/2">
+            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                 alt="Desa Siponjot"
+                 class="w-full h-[500px] object-cover md:min-h-[400px]">
         </div>
-    @endif   
-    <!-- Form -->
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
-        <div class="space-y-4">
-            <div>
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" type="email" name="email" :value="old('email')" required autofocus />                
+            <div class="md:w-1/2 p-8 md:p-12">
+            <div class="mb-8">
+                <h1 class="text-[#34987D] text-xl font-semibold">Transformasi Digital</h1>
+                <h2 class="text-[#34987D] text-lg">Desa Siponjot</h2>
             </div>
-            <div>
-                <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" type="password" name="password" required autocomplete="current-password" />                
-            </div>
-        </div>
-        <div class="flex items-center justify-between mt-6">
-            @if (Route::has('password.request'))
-                <div class="mr-1">
-                    <a class="text-sm underline hover:no-underline" href="{{ route('password.request') }}">
-                        {{ __('Forgot Password?') }}
-                    </a>
+            <h3 class="text-2xl font-bold text-gray-800">LOGIN</h3>
+            <p class="text-gray-600 text-[12px] mb-4">Silakan masukkan data Anda di bawah ini.</p>
+
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Masukkan nama anda"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
                 </div>
-            @endif            
-            <x-button class="ml-3">
-                {{ __('Sign in') }}
-            </x-button>            
-        </div>
-    </form>
-    <x-validation-errors class="mt-4" />   
-    <!-- Footer -->
-    <div class="pt-5 mt-6 border-t border-gray-100 dark:border-gray-700/60">
-        <div class="text-sm">
-            {{ __('Don\'t you have an account?') }} <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
-        </div>
-        <!-- Warning -->
-        <div class="mt-5">
-            <div class="bg-yellow-500/20 text-yellow-700 px-3 py-2 rounded-lg">
-                <svg class="inline w-3 h-3 shrink-0 fill-current" viewBox="0 0 12 12">
-                    <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
-                </svg>
-                <span class="text-sm">
-                    To support you during the pandemic super pro features are free until March 31st.
-                </span>
-            </div>
+                <div class="mb-8">
+                    <label for="password" class="block text-gray-700 font-medium mb-2">Kata Sandi</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Masukkan kata sandi anda"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-[#34987D] text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
+                >
+                    Masuk
+                </button>
+            </form>
         </div>
     </div>
-</x-authentication-layout>
+</body>
+</html>

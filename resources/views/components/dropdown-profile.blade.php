@@ -50,7 +50,7 @@
 
             <li>
                 <a class="font-medium text-sm text-violet-500 hover:text-violet-600 dark:hover:text-violet-400 flex items-center py-1 px-3"
-                    href="{{ route('login') }}" @click="open = false" @focus="open = true"
+                    href=" " @click="open = false" @focus="open = true"
                     @focusout="open = false">Login</a>
             </li>
         </ul>

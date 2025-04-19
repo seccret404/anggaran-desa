@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\MemberController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProgramDesaController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\PortalBeritaController;
 use App\Http\Controllers\ManajemenAnggaranController;
 
 /*
@@ -35,6 +37,7 @@ Route::get('/user/kebijakan/kebijakan-desa', [UserController::class, 'kebijakan_
 
 
 // Route::redirect('/', 'login');
+Route::get('/login', [AuthController::class, 'login'])->name('login.page');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 //admin
@@ -44,10 +47,12 @@ Route::get('/dashboard/admin/form-pemasukan', [DashboardController::class,'FormP
 Route::get('/dashboard/admin/detail-pengeluaran', [DashboardController::class,'DetailPengeluaran'])->name('detail.pengeluaran');
 Route::get('/dashboard/admin/detail-pemasukan', [DashboardController::class,'DetailPemasukan'])->name('detail.pemasukan');
 
-
 Route::get('/dashboard/admin/manajemen-anggaran',[ManajemenAnggaranController::class,'manajemenAnggaran'])->name('manajemen.anggaran');
 Route::get('/dashboard/admin/form-anggaran',[ManajemenAnggaranController::class,'FormAnggaran'])->name('form.anggaran');
 
-
 Route::get('/dashboard/admin/program-desa',[ProgramDesaController::class,'ProgramDesa'])->name('program.desa');
 Route::get('/dashboard/admin/form-desa',[ProgramDesaController::class,'FormProgramDesa'])->name('form.program.desa');
+
+
+Route::get('/dashboard/admin/portal-berita',[PortalBeritaController::class,'PortalBerita'])->name('portal.berita');
+Route::get('/dashboard/admin/form-portal-berita',[PortalBeritaController::class,'FormPortalBerita'])->name('form.portal.berita');
